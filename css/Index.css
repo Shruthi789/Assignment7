@@ -1,69 +1,37 @@
-/*Background Colour*/
-body{
-    background-image: linear-gradient(to top,rgb(73, 192, 73),#c1571e);
+/*Body Style*/
+*{
+    background-color: rgb(177, 217, 250);
 }
-/*Heading*/
-.heading h2{
-    color:#330000;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+/*Options Style*/
+.options{
+    list-style-type:none;
+    justify-content:center;
+    padding:0px;
 }
-/*Button Style */
-.displayButton{
-    background-color:#c1571e;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
-    border-radius: 15px;
-    padding:6px;
-    border:2px solid #330000;
+.options li{
+    width:130px;
+    border-right:2px solid gray;
+    color: navy;
+}
 
+/*Category Name and Heading Name Style*/
+.CategoryName::first-letter{
+    text-transform:uppercase;
 }
-.displayButton:hover{
-    background-color:black;
-    color:white;
-    border:2px solid grey;
-    cursor:pointer;
+.CategoryName,.heading h2{
+    color:navy;
 }
-.updateButton{
-  background-color:#330000;
-  color:white;
-  border-radius: 23px;
-  border:2px solid grey;
-  padding: 6px;
-  width: 75%;
-  height:50px;
-} 
-.updateButton:hover{
-    background-color: gray;
-    color:#330000;
-    border:2px solid #330000;
+/*Error Message Style*/
+.error-message{
+    color:red;
 }
-.deleteButton{
-    background-color:#8d0404;
-    color:white;
-    border-radius: 23px;
-    border:2px solid grey;
-    padding: 6px;
-    width: 75%;
-    height:50px;
-  }
-.deleteButton:hover{
-    background-color: gray;
-    color:#8d0404;
-    border:2px solid #8d0404;
-} 
-@media screen and (max-width: 425px) {
-    .updateButton,.deleteButton{
-        width:100%;
-        font-size:12px;
+/*Submit Button Style*/
+ @media screen and (max-width: 425px) {
+    .submitButton{
+        padding:2px;
     }
   }
-
-/*Data Table Style */
-.data-table tr{
-    color:#330000;
-}
-/*Error Message*/
-.error-message{
-    color:#8d0404;
-    font-weight: bold;
-}
+  /*Card Item*/
+  .CardItem{
+      border:2px solid grey !important;
+  }

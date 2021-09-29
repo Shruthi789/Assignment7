@@ -6,21 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/Index.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="icon" href="images/fox.jpg">
-    <title>Random Fox Images</title>
+    <link rel="icon" href="images/news-icon.png">
+    <title>InShorts News</title>
 </head>
 <body>
 <div class="container-fluid">
    <!--HEADING-->
    <header class="heading text-center">
-   <h2>RANDOM FOX IMAGES</h2>
-   <img src="images/hand-pointer.png" width="50" height="50" alt="Pointer"><button class="displayButton" type="button">Click here to add a Fox Image</button><br>
-   <p class="error-message"></p>
-   </header><br>
-   <!--TABLE-->
-   <table class="data-table table table-bordered text-center">
-      <tr><th>NO</th><th>IMAGE</th><th>UPDATE</th><th>DELETE</th></tr>
-   </table> 
+   <img src="images/news-picture.png" height="50" width="50">
+   <h2>NEWS UPDATES</h2>
+   </header>
+   <!--INPUT BOX FOR NEWS CATEGORY-->
+  <div id="InputBox" class="row justify-content-center">
+   <div class="col-sm-8">
+    <div class="row justify-content-center">
+  <div class="col-sm-6">
+   <form class="newsForm" onsubmit="displayByCategory();return false;">
+        <div class="row">     
+        <div class="col-sm-9">
+       <input class="Category form-control" id="category" type="text" placeholder="Enter a category">
+       </div>
+       <div class="col-sm-3 text-center submitButton">
+       <input type="Submit" class="btn btn-primary">
+       </div>  
+    </div>
+   </form>
+  </div><br>
+</div>
+</div>
+<!--CATEG0RY OPTIONS-->
+<ul class="row text-center options p-3">
+  <li> Category Options:</li>
+  <li>All News</li>
+  <li>National</li>
+  <li>Business</li>
+  <li>Sports</li>
+  <li>World</li>
+  <li>Politics</li>
+  <li>Technology</li>
+  <li>Startup</li>
+  <li>Entertainment</li>
+  <li>Miscellaneous</li>
+  <li>Hatke</li>
+  <li>Science</li>
+  <li>Automobile</li>
+  </ul>
+ </div>
+  <br>
+  <!--Error Box-->
+  <p class="error-message text-center"></p>
+  <!--NEWS ITEM BOX-->
+  <div class="NewsBox">
+      <h3 class="CategoryName"></h3>
+      <div class="News"></div>
+  </div>
 </div>
    <!--SCRIPTS-->
     <script src="js/bootstrap.min.js"></script>
